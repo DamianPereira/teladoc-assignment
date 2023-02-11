@@ -8,6 +8,10 @@ I used ruby ruby-3.1.3 and rails 7.0.4.2 to create the example application. Inst
 
 I actually spent 3 hours on this, because I did not code it all in one sitting, instead doing it bit by bit over the day. I also took the chance to refresh my ruby knowledge and remember lots of caveats, setup Rubymine, and other general tasks. Also, translating the assignment into a real ruby application was the most time consuming part. In the future I'd suggest providing a simple repository like the initial commit on this for future interviews.
 
+## CI/Github actions
+
+Github actions are setup as a CI for running rspec, you can see them on the actions tab.
+
 ## Database setup
 
 `sqlite3` is used for the database, and the `seeds.rb` file must be run to make the app work. The tests do not rely on `seeds.rb`, so no setup is needed for that. In order to setup the database for development, and to be able to use the app, please run `bundle exec db:migrate db:seed`
