@@ -1,23 +1,25 @@
+# frozen_string_literal: true
+
 class UsersController < ApplicationController
   def show
     @user = User.find(params.require(:id))
   end
 
   def other_1
-    @user = User.find_by(first_name: "Other", last_name: "1")
+    @user = User.find_by(first_name: 'Other', last_name: '1')
   end
 
   def other_2
-    @user = User.find_by(first_name: "Other", last_name: "2")
+    @user = User.find_by(first_name: 'Other', last_name: '2')
   end
 
   def other_3
-    @user = User.find_by(first_name: "Other", last_name: "3")
+    @user = User.find_by(first_name: 'Other', last_name: '3')
   end
 
   private
-  def record_not_found
-    render plain: "User was not found", status: 404
-  end
 
+  def record_not_found
+    render plain: 'User was not found', status: 404
+  end
 end
