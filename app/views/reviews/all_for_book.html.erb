@@ -1,5 +1,5 @@
 <ul>
   <% @book.reviews.each do |review| %>
-    <li><%= review.content.html_safe %> by <%= review.user.full_name %></li>
+    <li><%= sanitize review.content %> by <%= review.user.full_name %></li>
   <% end %>
 </ul>

@@ -14,7 +14,7 @@ Book.create(id: 1, title: "Some Book").reviews.create(
   [
     { content: "This book is great!", user_id: john.id },
     { content: "This book is good", user_id: other_1.id },
-    { content: "This book is entertaining", user_id: other_2.id },
-    { content: "This book is bad", user_id: other_3.id }
+    { content: "This book is bad and I'm going to break the layout </ul>", user_id: other_2.id },
+    { content: "This book is <strong>very</strong> entertaining", user_id: other_3.id }
   ]
 )

@@ -68,4 +68,5 @@ end
 
 group :test do
   gem "rails-controller-testing"
+  gem "n_plus_one_control"
 end
