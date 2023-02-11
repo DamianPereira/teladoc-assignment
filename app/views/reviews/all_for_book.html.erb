@@ -1,3 +1,5 @@
-<% @book.reviews.each do |review| %>
-  <%= review.content.html_safe %> by <%= review.user.first_name %> <%= review.user.last_name %> <br/>
-<% end %>.
+<ul>
+  <% @book.reviews.each do |review| %>
+    <li><%= review.content.html_safe %> by <%= review.user.full_name %></li>
+  <% end %>
+</ul>
