@@ -16,19 +16,19 @@ RSpec.describe "Users", type: :request do
     it "renders the other_1 user correctly" do
       get "/users/other_1"
       expect(response).to have_http_status(:success)
-      expect(response).to render_template("users/other_1")
+      expect(response).to render_template("users/show")
     end
 
     it "renders the other_1 user correctly" do
       get "/users/other_2"
       expect(response).to have_http_status(:success)
-      expect(response).to render_template("users/other_2")
+      expect(response).to render_template("users/show")
     end
 
     it "renders the other_1 user correctly" do
       get "/users/other_3"
       expect(response).to have_http_status(:success)
-      expect(response).to render_template("users/other_3")
+      expect(response).to render_template("users/show")
     end
 
     it "returns 404 for non existing user" do
