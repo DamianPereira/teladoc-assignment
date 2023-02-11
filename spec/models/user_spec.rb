@@ -11,7 +11,4 @@ describe User, type: :model do
   it "has a last name" do
     expect(some_user.last_name).to eq(some_last_name)
   end
-  it "has a full name" do
-    expect(some_user.full_name).to eq(some_full_name)
-  end
 end
