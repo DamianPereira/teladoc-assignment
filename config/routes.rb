@@ -11,5 +11,5 @@ Rails.application.routes.draw do
   get "/users/other_3", to: 'users#other_3'
   get "/users/:id", to: 'users#show'
 
-  get "books/:id/reviews/", to: "reviews#show"
+  get "books/:id/reviews/", to: "reviews#all_for_book"
 end

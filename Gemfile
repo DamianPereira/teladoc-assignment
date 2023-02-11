@@ -66,3 +66,6 @@ group :development do
   gem "bullet"
 end
 
+group :test do
+  gem "rails-controller-testing"
+end

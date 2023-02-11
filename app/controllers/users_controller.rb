@@ -15,4 +15,9 @@ class UsersController < ApplicationController
     @user = User.find_by(first_name: "Other", last_name: "3")
   end
 
+  private
+  def record_not_found
+    render plain: "User was not found", status: 404
+  end
+
 end

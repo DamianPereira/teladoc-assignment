@@ -1,5 +1,5 @@
 class ReviewsController < ApplicationController
-  def show
+  def all_for_book
     @book = Book.find(params.require(:id))
   end
 end
